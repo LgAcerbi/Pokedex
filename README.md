@@ -11,16 +11,16 @@ Express
 Pokemon-promise-v2 (aka POKEAPI.CO)  
 
 ## Screenshots
-# Landing Page
+### Landing Page
 ![Screenshot1](https://raw.githubusercontent.com/LgAcerbi/Pokedex/main/screenshots/Screenshot_1.png)
 
-# Filtering Displayed
+### Filtering Displayed
 ![Screenshot2](https://raw.githubusercontent.com/LgAcerbi/Pokedex/main/screenshots/Screenshot_2.png)
 
-# Modal View
+### Modal View
 ![Screenshot3](https://raw.githubusercontent.com/LgAcerbi/Pokedex/main/screenshots/Screenshot_4.png)
 
-# No results with footer credits
+### No results with footer credits
 ![Screenshot4](https://raw.githubusercontent.com/LgAcerbi/Pokedex/main/screenshots/Screenshot_5.png)
 
 
