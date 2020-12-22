@@ -1,7 +1,7 @@
 # Pokédex
 ## This project is currently in development
 
-This is a pokédex that contains all pokémons contained in POKEAPI.CO
+This is a pokédex that contains all pokémons, provided by POKEAPI.CO
 developed with this frameworks:
 
 * Axios  
