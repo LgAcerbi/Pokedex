@@ -12,7 +12,7 @@ Pokemon-promise-v2 (aka POKEAPI.CO)
 
 ## Screenshots
 ### Landing Page
-![Screenshot1](https://raw.githubusercontent.com/LgAcerbi/Pokedex/main/screenshots/Screenshot_1.png)
+![Screenshot1](https://raw.githubusercontent.com/LgAcerbi/Pokedex/main/screenshots/Screenshot_0.png)
 
 ### Filtering Displayed
 ![Screenshot2](https://raw.githubusercontent.com/LgAcerbi/Pokedex/main/screenshots/Screenshot_2.png)
