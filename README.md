@@ -1,5 +1,5 @@
 # Pokédex
-## This project is in currently devolopment
+## This project is currently in development
 
 This is a pokédex that contains all pokémons contained in POKEAPI.CO
 developed with this frameworks:
