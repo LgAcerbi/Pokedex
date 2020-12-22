@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600;700&display=swap');
+
+
+.modal{
+    display: table-column;
+    position: fixed;
+    justify-content: center;
+    left: 22%;
+   top: 15%; 
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    z-index: 100;
+    width: 53%;
+    border-radius: 5px;
+    transition: 0.7s;
+
+    
+    animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+.titleDiv{
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    margin: 0.5rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.2rem;
+}
+
+.titleDiv button{
+    border: none;
+    font-weight: 700;
+    background-color: white;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.titleDiv button:hover{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    transition: 0.6s;
+}
+
+.titleDiv button:focus{
+    outline: none;
+}
+
+.contentDiv{
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    margin-top: 1rem;
+    display: flex;
+    background-color: rgba(212, 212, 212, 0.363);
+    justify-content: center;
+}
+
+.pokemonImgModal{
+    max-width: 60%;
+    max-height: auto;
+    object-fit: fill;
+}
+
+.modalOverlay{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    animation: fadeIn .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+.Sprites{
+  margin-left: 1rem;
+  width: 100%;
+  outline: 1px dashed rgb(126, 126, 126);
+  outline-offset: -4px;
+}
+
+.inGameView{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.spritesDefault{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 40%;
+  grid-template-areas: 
+  "a a"
+  "b c";
+  align-items: center;
+  justify-items: center;
+}
+.spritesDefault a{
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  grid-area: a;
+  text-align: center;
+}
+
+.frontDefault {
+  grid-area: b;
+  min-width: 96px;
+  height: auto;
+  background-color: rgb(233, 230, 227);
+  border-radius: 5px;
+}
+
+.backDefault {
+  grid-area: c;
+  min-width: 96px;
+  height: auto;
+  background-color: rgb(233, 230, 227);
+  border-radius: 5px;
+}
+
+.spritesShiny{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 40%;
+  grid-template-areas: 
+  "a a"
+  "b c";
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.spritesShiny a{
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  grid-area: a;
+  text-align: center;
+  
+}
+
+.backShiny{
+  grid-area: c;
+  min-width: 96px;
+  min-height: auto;
+  background-color: rgb(241, 226, 211);
+  border-radius: 5px;
+}
+
+.frontShiny {
+  grid-area: b;
+  min-width: 96px;
+  min-height: auto;
+  background-color: rgb(241, 226, 211);
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+
+
+  .modal{
+    display: table-column;
+    position: fixed;
+    justify-content: center;
+    left: 12%;
+   top: 10%; 
+   height: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    z-index: 100;
+    width: 70%;
+    border-radius: 5px;
+    transition: 0.7s;
+
+    
+    animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+ .pokemonImgModal{
+  max-width: 55%;
+  max-height: auto;
+ }
+
+}
+
+@media (max-width: 425px) {
+
+
+  .modal{
+    display: table-column;
+    position: fixed;
+    justify-content: center;
+    left: 12%;
+   top: 10%; 
+   height: 83%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    z-index: 100;
+    width: 70%;
+    border-radius: 5px;
+    transition: 0.7s;
+
+    
+    animation: scaleUp .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+
+  .contentDiv{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "a"
+    "b";
+  }
+  .pokemonImgModal{
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: a;
+    max-width: 60%;
+    max-height: auto;
+    /*object-fit: fill;*/
+  }
+
+  .Sprites{
+    margin-left: 0;
+    width: 100%;
+    outline: 1px dashed rgb(126, 126, 126);
+    outline-offset: -4px;
+  }
+}
+
+
+@keyframes scaleUp {
+    0% {
+      transform:scale(.8) translateY(1000px);
+      opacity:0;
+    }
+    100% {
+      transform:scale(1) translateY(0px);
+      opacity:1;
+    }
+}
+
+@keyframes scaleDown {
+    0% {
+      transform:scale(1) translateY(0px);
+      opacity:1;
+    }
+    100% {
+      transform:scale(.8) translateY(1000px);
+      opacity:0;
+    }
+}
+
+@keyframes fadeIn {
+        0% {
+          background:rgba(0,0,0,.0);
+        }
+        100% {
+          background:rgba(0,0,0,.7);
+        }
+      }
+      
+@keyframes fadeOut {
+    0% {
+        background:rgba(0,0,0,.7);
+    }
+    100% {
+        background:rgba(0,0,0,.0);
+    }
+}
+
